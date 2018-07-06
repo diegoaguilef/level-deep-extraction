@@ -1,6 +1,9 @@
 # level-deep-extraction
 Function that receive a json with a tree structure and scan its childs by passing a level
 
+Dependencies:
+- Jquery
+
 Example json tree whith three levels:
 ```
 var json = {
