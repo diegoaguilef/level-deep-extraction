@@ -3,40 +3,54 @@ Function that receive a json with a tree structure and scan its childs by passin
 
 Example json tree whith three levels:
 ```
-level1: {
-	leve21: {
-		leve31{
-			childLevel: 'some text',
-			anotherChild: 1
+var json = {
+	level1: {
+		leve21: {
+			leve31:{
+				childLevel: 'some text',
+				anotherChild: 1
+			},
+			level32:{
+				childLevel: 'some child',
+				anotherChild: 2
+			},
+			data1:'data1',
+			data2: 'data2'
 		},
-		level32:{
-			childLevel: 'some child',
-			anotherChild: 2
-		}
-	},
-	level22:{
-		level31:{
-			childLevel: 'some 3',
-			anotherChild: 3
-		}
-	}
-},
-level2: {
-	leve212: {
-		leve312{
-			childLevel: 'some text',
-			anotherChild: 1
+		level22:{
+			level31:{
+				childLevel: 'some 3',
+				anotherChild: 3
+			},
+			data1:'data1',
+			data2: 'data2'
 		},
-		level322:{
-			childLevel: 'some child',
-			anotherChild: 2
-		}
+		data13:'data31',
+		data23: 'data23'
 	},
-	level222:{
-		level312:{
-			childLevel: 'some 3',
-			anotherChild: 3
-		}
+	level2: {
+		leve212: {
+			leve312:{
+				childLevel: 'some text',
+				anotherChild: 1
+			},
+			level322:{
+				childLevel: 'some child',
+				anotherChild: 2
+			},
+			data12:'data12',
+			data22: 'data22'
+		},
+		level222:{
+			level312:{
+				childLevel: 'some 3',
+				anotherChild: 3
+			},
+			data21:'data21',
+			data22: 'data22'
+		},
+		dataqq1:'dataq1',
+		dataqq2: 'dataq2'
 	}
 }
 ```
